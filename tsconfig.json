@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "module": "esnext",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "include": ["src", "./declaration.d.ts"],
+  // "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib", "**/*.stories.tsx", "**/*.test.tsx"]
+
+  //Add when bundling "exclude": ["node_modules", "lib", "**/*.test.tsx"]
+}

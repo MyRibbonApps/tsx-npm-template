@@ -1,0 +1,18 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        // Rollup will handle modules
+        "modules": false
+      }
+    ],
+    ["@babel/react"],
+    "@babel/preset-typescript"
+  ],
+  "env": {
+    "test": {
+      "presets": ["@babel/env", "@babel/react"]
+    }
+  }
+}
