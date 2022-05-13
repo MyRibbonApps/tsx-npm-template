@@ -1,8 +1,8 @@
 {
   "name": "tsx-npm-template",
   "version": "1.0.0",
-  "main": "lib/indx.cjs.js",
-  "module": "lib/indx.esm.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -50,8 +50,8 @@
     "@types/react": "^17.0.2"
   },
   "scripts": {
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier-eslint '**/*.js' --write",
+    "lint": "eslint '**/*.tsx'",
+    "lint:fix": "prettier-eslint '**/*.tsx' --write",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test-converage": "jest --coverage",
     "build": "rollup --config",
